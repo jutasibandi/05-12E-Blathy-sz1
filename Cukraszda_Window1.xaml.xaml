@@ -1,0 +1,67 @@
+﻿<Window x:Class="cukraszda.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:cukraszda"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <StackPanel Margin="20">
+
+            <TextBlock Text="ÁRLISTA"
+               FontSize="30"
+               FontWeight="Bold"
+               HorizontalAlignment="Center"
+               Margin="0,0,0,20" FontFamily="Algerian"/>
+            <MenuItem Header="Névjegy"
+          Click="Nevjegy_Click"/>
+            <WrapPanel Margin="0,10">
+                <CheckBox x:Name="cb1" Content="Somlói galuska (300 Ft)" Width="220"/>
+                <TextBox x:Name="tb1" Width="50"/>
+                <TextBlock Text=" adag"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="0,10">
+                <CheckBox x:Name="cb2" Content="Rákóczi túrós (280 Ft)" Width="220"/>
+                <TextBox x:Name="tb2" Width="50"/>
+                <TextBlock Text=" adag"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="0,10">
+                <CheckBox x:Name="cb3" Content="Csoki torta (350 Ft)" Width="220"/>
+                <TextBox x:Name="tb3" Width="50"/>
+                <TextBlock Text=" adag"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="0,10">
+                <CheckBox x:Name="cb4" Content="Marcipán alagút (400 Ft)" Width="220"/>
+                <TextBox x:Name="tb4" Width="50"/>
+                <TextBlock Text=" adag"/>
+            </WrapPanel>
+
+            <WrapPanel Margin="0,10">
+                <CheckBox x:Name="cb5" Content="Eszterházy szelet (400 Ft)" Width="220"/>
+                <TextBox x:Name="tb5" Width="50"/>
+                <TextBlock Text=" adag"/>
+            </WrapPanel>
+
+            <Button x:Name="btnRendel"
+        Content="RENDEL"
+        Width="120"
+        Height="40"
+        Margin="0,20"
+        Click="btnRendel_Click">
+
+                <Button.ContextMenu>
+                    <ContextMenu>
+                        
+                    </ContextMenu>
+                </Button.ContextMenu>
+
+            </Button>
+
+        </StackPanel>
+
+    </Grid>
+</Window>
